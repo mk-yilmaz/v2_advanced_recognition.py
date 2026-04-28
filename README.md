@@ -1,6 +1,51 @@
-# v2_advanced_recognition.py (v2)
+## 🇬🇧 English Version
+# Real-Time Face Recognition System (Advanced Version)
+This project is an advanced face recognition system using a Raspberry Pi camera, OpenCV, and the face_recognition library.
 
+It detects faces in real time, compares them with a reference image, and identifies known or unknown persons.
 
+# Features
+- Real-time camera streaming
+- Face detection using OpenCV (Haar Cascade)
+- AI-based face recognition using face_recognition library
+- Comparison with reference image
+- Display of name and recognition confidence
+- Bounding boxes and labels on detected faces
+- Live video display
+
+# How it works
+- The camera captures video frames continuously
+- OpenCV detects face locations
+- Detected faces are cropped
+- face_recognition generates face encodings
+- Encodings are compared with a reference image
+- Result is displayed:
+  - 🟢 Known person
+  - 🔴 Unknown person
+
+# Requirements
+- Python 3.x
+- Raspberry Pi with camera
+- OpenCV (cv2)
+- face_recognition
+- numpy
+- picamera2
+- Haarcascade file: `haarcascade_frontalface_default.xml`
+
+# Installation
+pip install opencv-python face-recognition numpy picamera2
+
+# Run the program
+python v2_advanced_recognition.py
+
+Exit the program by pressing:
+q
+
+# Author
+M. Yilmaz
+
+---------------------------------------------------------------------------------------------------------------------------
+## 🇩🇪 German Version
 ## Echtzeit-Gesichtserkennung mit Python (Advanced Version)
 
 Dieses Projekt ist eine erweiterte Version einer einfachen Gesichtserkennung.  
@@ -8,7 +53,6 @@ Es verwendet eine Raspberry Pi Kamera sowie OpenCV und die face_recognition Libr
 
 
 ## Features
-
 - Echtzeit-Kameraübertragung  
 - Gesichtserkennung mit OpenCV (Haar Cascade)  
 - KI-basierte Gesichtserkennung mit face_recognition  
@@ -19,7 +63,6 @@ Es verwendet eine Raspberry Pi Kamera sowie OpenCV und die face_recognition Libr
 
 
 ## Funktionsweise
-
 1. Die Kamera nimmt kontinuierlich Bilder in Echtzeit auf  
 2. Gesichter werden zuerst mit OpenCV lokalisiert  
 3. Der erkannte Bereich wird ausgeschnitten  
@@ -31,26 +74,17 @@ Es verwendet eine Raspberry Pi Kamera sowie OpenCV und die face_recognition Libr
 
 
 ## Voraussetzungen
-
 - Python 3.x  
 - Raspberry Pi mit Kamera  
-- OpenCV (`cv2`)  
+- OpenCV (cv2) 
 - face_recognition  
 - numpy  
-- picamera2  
-
-### Zusätzliche Datei
-
-- `haarcascade_frontalface_default.xml`  
-  Wird für die Gesichtserkennung (OpenCV Haar Cascade) verwendet.  
-  Die Datei wird normalerweise mit OpenCV mitgeliefert (`cv2.data.haarcascades`).
+- picamera2
+- Haarcascade file: `haarcascade_frontalface_default.xml`
 
 
 ## Installation
-
-```bash
 pip install opencv-python face-recognition numpy picamera2
-```
 
 ##Starten des Programms: 
 python v2_advanced_recognition.py
